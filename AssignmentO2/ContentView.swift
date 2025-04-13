@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var password: String = ""
     
     //Example of use custom style
-    let standardStyle = ImputStyle(
+    let standardStyle = InputStyle(
         borderColor: Color.App.Content.OnNeutral.danger,
         textColor: .red,
         placeholderColor: .orange,
@@ -30,25 +30,29 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Username")
                     .applyLabelSStyle()
-                TextImput(text: $username, placeholder: "Username")
+                TextInput(text: $username, placeholder: "Username")
+                    .accessibilityLabel("Enter your username")
+                    .accessibilityHint("Please enter your username")
             }
             VStack(alignment: .leading) {
                 Text("Password")
                     .applyLabelSStyle()
-                PasswordImput(
+                PasswordInput(
                     text: $password,
                     placeholder: "Password",
                     passwordMinLength: 8,
                     validationCharacterMessage: "Password must be at least \(8) characters long.",
                     validationSymbolMessage: "Password must include at least one uppercase letter and one symbol."
                 )
+                .accessibilityHint("Password must be at least 8 characters long and include at least one uppercase letter and one symbol.")
+                .accessibilityLabel("Enter your password")
             }
         }
         .padding()
-        .environment(\.imputStyle, ImputStyle())
+        .environment(\.inputStyle, InputStyle())
         
-        // Use standardStyle here instead of ImputStyle(), but its only for example
-        //.environment(\.imputStyle, standardStyle)
+        // Use standardStyle here instead of InputStyle(), but its only for example
+        //.environment(\.inputStyle, standardStyle)
         
     }
 }
