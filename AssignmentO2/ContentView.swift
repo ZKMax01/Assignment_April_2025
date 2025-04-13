@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
+    //Example of use custom style
     let standardStyle = ImputStyle(
         borderColor: Color.App.Content.OnNeutral.danger,
         textColor: .red,
@@ -44,7 +45,7 @@ struct ContentView: View {
             }
         }
         .padding()
-        .environment(\.imputStyle, ImputStyle())
+        .environment(\.imputStyle, ImputStyle())//Use standardStyle here instead of ImputStyle()
     }
 }
 
