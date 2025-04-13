@@ -1,0 +1,15 @@
+{
+  "originHash" : "1ec72fd66809ebaf70199eddb42ce601f4cad27dc79080c7deea568a30ffec84",
+  "pins" : [
+    {
+      "identity" : "designkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ZKMax01/DesignKit",
+      "state" : {
+        "branch" : "prod",
+        "revision" : "80cfb97b457f359c7cb041e1bf7e1a8c07379ed4"
+      }
+    }
+  ],
+  "version" : 3
+}

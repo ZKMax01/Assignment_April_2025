@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D9639C362DAB996F00BA8B0B /* DesignKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9639C352DAB996F00BA8B0B /* DesignKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D9639C182DAB986E00BA8B0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9639C362DAB996F00BA8B0B /* DesignKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = AssignmentO2;
 			packageProductDependencies = (
+				D9639C352DAB996F00BA8B0B /* DesignKit */,
 			);
 			productName = AssignmentO2;
 			productReference = D9639C072DAB986E00BA8B0B /* AssignmentO2.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = D9639BFE2DAB986E00BA8B0B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D9639C342DAB996F00BA8B0B /* XCRemoteSwiftPackageReference "DesignKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D9639C082DAB986E00BA8B0B /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9639C342DAB996F00BA8B0B /* XCRemoteSwiftPackageReference "DesignKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZKMax01/DesignKit";
+			requirement = {
+				branch = prod;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9639C352DAB996F00BA8B0B /* DesignKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9639C342DAB996F00BA8B0B /* XCRemoteSwiftPackageReference "DesignKit" */;
+			productName = DesignKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9639BFF2DAB986E00BA8B0B /* Project object */;
 }
