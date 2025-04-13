@@ -45,7 +45,11 @@ struct ContentView: View {
             }
         }
         .padding()
-        .environment(\.imputStyle, ImputStyle())//Use standardStyle here instead of ImputStyle()
+        .environment(\.imputStyle, ImputStyle())
+        
+        // Use standardStyle here instead of ImputStyle(), but its only for example
+        //.environment(\.imputStyle, standardStyle)
+        
     }
 }
 
